@@ -1,0 +1,403 @@
+@charset"utf-8";
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* width: 800px; */
+    margin: 0 auto;
+}
+
+div{
+    display: flex;
+    flex: 1;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+/* ----------------------- ヘッダー ----------------------*/
+
+header{
+    height: 95px;
+}
+
+.header-container{
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.rogo{
+    margin: 15px 0 11px 20px;
+    display: block;
+}
+
+button{
+    padding: 0 15px 0 15px;
+}
+
+.button{
+    text-align: end;
+    margin: 10px 10px 11px 0;
+    display: block;
+}
+.rights p{
+    text-align: center;
+}
+/* ------------------------ ナビゲーション ----------------------- */
+
+nav{
+    margin: -15px -15px -15px 0px ;
+    width: 300px;
+}
+
+ul{
+    padding: 10px;
+    line-height: 35px;
+    list-style: none;
+}
+
+.navbar1 li{
+    padding-left: 3px;
+    max-width: 100vw;
+    width: 100px;
+}
+
+h5{
+    font-size: 15px;
+    margin:  30px 0 -25px 4px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(136, 136, 136);
+    background-color: rgba(231, 231, 231, 0.737);
+}
+
+.container{  
+    border-bottom: 1px dotted #b7b7b7e8;
+}
+
+.container a{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* -----------------中央-------------- */
+
+main{
+    flex: 1;
+}
+
+.bread{
+    display: flex;
+    margin: -15px 0 -10px 2px;
+}
+
+.bread a{
+    color: rgb(14, 190, 190);
+    font-size: 14px;
+}
+
+.bread li:after{
+    content: '>';
+    padding: 1em 0 0 0;
+}
+
+li:last-child::after {
+    content: none;
+}
+
+h2{
+    margin: 40px  0 40px 20px;
+    font-weight:normal;
+    border-bottom: 1px solid rgb(186, 186, 186);
+}
+
+.syomidasi{
+    margin-top: 40px;
+    text-align: left;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.question li{
+    list-style-type: decimal;
+}
+
+.question a{
+    font-size: 16px;
+    color: rgb(14, 190, 190);
+    text-decoration: underline;
+}
+
+.QandA {
+    margin: 30px  0 50px 20px;
+}
+
+/*----------------------- 商品リスト  ----------------------- */
+.syouhinlist{
+    flex-flow: row;
+  }
+  
+  .page{
+    text-decoration: none;
+  }
+
+  .syousai{
+    line-height: 9px;
+  }
+  
+  .bland{
+    font-weight: bold;
+  }
+  
+  .bread li{
+    margin-left: 5px;
+  }
+
+  .hinmoku{
+    font-size: 13px;
+    color: gray;
+  }
+  
+  .price{
+    font-size: 19px;
+    font-weight: bold;
+  }
+  
+  .syouhinlist{
+    flex-flow: row;
+  }
+  
+  .syouhin-container{
+    display: block;
+  }
+  
+  .syouhin-container0128{
+    display: block;
+  }
+/*----------------------- /商品リスト/  ----------------------- */
+  
+aside{
+    width: 500px;
+}
+
+.shoes{
+    flex-flow: column;
+}
+
+.shoes img{
+   width: auto;
+   margin:0 auto;
+}
+
+.tyui{
+    font-size: 16px;
+    margin: 30px 10px 50px 0;
+    text-decoration: underline;
+}
+
+.return{
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kanren{
+    list-style-type:disc;
+    margin:-15px 0 0 10px;
+}
+
+.kanren a{
+    font-size:15px ; 
+    color: rgb(14, 190, 190);
+}
+
+h4{
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+.kensaku li{
+    display: inline;
+}
+
+/*----------------------  追跡ボタン ---------------------- */
+.kaisi {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ffc832c9;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    margin-bottom: -10px;
+}
+
+.crea{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #c2c2c2c9;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    margin-bottom: -10px;
+}
+   
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+   
+button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+   
+button:hover span {
+    padding-right: 15px;
+}
+   
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*----------------------  /追跡ボタン/ ---------------------- */
+h6{
+    font-size: 14px;
+    margin-top:0px;
+}
+   
+.number{
+    flex-direction: column;
+    margin-top: -20px;
+}
+input{
+    width: 180px;
+    margin: 3px;
+    padding: 9px;
+    border-radius: 5;
+}
+ 
+.ku-pon {
+    margin: 8px  15px;
+    justify-content: space-around;
+}
+
+
+/*----------------会員登録------------ */
+.koumoku{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 3px 0 1px 5px;
+}
+
+.koumoku-box{
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: 80vw;
+    margin-bottom: 30px;
+}
+.koumoku-box1{
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: 80vw;
+}
+
+.kiyaku{
+    width: 100vw;
+   flex-flow: row;
+}
+/*------------------ フッター -------------------*/
+footer{
+    height: 200px;
+}
+
+h3{
+    text-align: center;
+}
+
+.sns{
+    justify-content: space-around;
+    flex-flow: row;
+    display: flex;
+    /* width: 100vw; */
+    height: 25px;
+}
+
+.sns>li{
+    margin: -15px auto;
+}
+
+.rights{
+    border-top: 1px gray solid;
+}
+/* --------------------- メディアクエリー -------------------*/
+@media (max-width:900px) {
+    body{
+        width:100%;
+    }
+    div{
+        flex-direction: column;
+    }
+   
+    nav,aside{
+        width:100%;
+    }
+
+    aside{
+        order: -2;
+    }
+
+    .container{
+        border: none;
+        display: inline-block;
+        flex-flow: column;
+    }
+
+    .container a{
+        font-size: 15px;
+        border: none;
+        justify-content: space-between;
+    }
+    .rights {
+        margin: 0 auto;
+     }
+} 
+
+@media (min-width:900px){
+    body{
+        width: 100%;
+    }
+    .bread{
+        display: flex;
+        margin: 10px 0 -10px 2px;
+    }
+    .shoes{
+        margin-top: 1em;
+        flex-direction: column;
+    }
+    .shoes img{
+        padding-bottom: 3em;
+    }
+}
+
+

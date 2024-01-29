@@ -1,0 +1,180 @@
+@charset"utf-8";
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+a{
+    font-size: 18px;
+    color: black;
+}
+
+header,footer{
+    background-color: rgb(235, 235, 235);
+}
+
+h4{
+  font-size: 17px;
+}
+/* ----------- カートボタン ----------- */
+
+.cartBtn {
+    text-align: end;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    position: relative;
+    gap: 7px;
+    color: white;
+    background-color: rgb(2, 2, 2);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  .cart {
+    z-index: 2;
+  }
+  
+  .cartBtn:active {
+    transform: scale(0.96);
+  }
+  
+  .product {
+    position: absolute;
+    width: 12px;
+    border-radius: 3px;
+    content: "";
+    left: 23px;
+    bottom: 23px;
+    opacity: 0;
+    z-index: 1;
+    fill: rgb(211, 211, 211);
+  }
+  
+  .cartBtn:hover .product {
+    animation: slide-in-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  /* --カートアニメーション-- */
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-30px);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translateY(0) rotate(-90deg);
+      opacity: 1;
+    }
+  }
+  
+  .cartBtn:hover .cart {
+    animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  /* --カートアニメーション-- */
+
+  /* ----------- /カートボタン/ ----------- */
+
+
+ /* ------------------ヘッダー-------------- */
+
+header{
+  background-position-y: 58px;
+  background-image: url(../img/キラキラバー.png);
+  background-size:  auto 40%;
+  background-repeat: no-repeat;
+} 
+
+.rights{
+  text-align: center;
+  font-size: 15px;
+}
+/* ------------テーブル---------- */
+table{
+  margin: 55px 0  90px 0;
+}
+
+.toutyaku{
+  margin-left: 25px;
+}
+
+.toutyaku1{
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+th{
+  font-weight: normal;
+  color: white;
+  background-color: rgb(45, 50, 108);
+}
+
+.midasi{
+  margin: 0px 60px;
+}
+
+.midasi1{
+  margin: 0px 30px;
+}
+
+.tiiki0{
+  font-size: large;
+  margin: 70px;
+} 
+
+.tiiki{
+  font-size: large;
+  margin: 80px;
+} 
+
+.yellow{
+  background-color: rgba(255, 239, 150, 0.459);
+}
+
+.green{
+  background-color: rgba(86, 255, 199, 0.414);
+}
+
+.syan{
+  background-color: rgba(171, 232, 253, 0.426);
+}
+
+.purple{
+  background-color: rgba(208, 163, 249, 0.301);
+}
+
+.red{
+  background-color: rgba(255, 168, 168, 0.379);
+}
+
+.orange{
+  background-color: rgba(255, 200, 148, 0.338);
+}
+
+ /* ------------------   メイン  -------------- */
+ 
+ .test-slick {
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+
+.test-slick__item img {
+  height: auto;
+  width: 100%;
+}
+  /* ------------------    フッター  -------------- */
+
